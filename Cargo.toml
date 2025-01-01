@@ -1,0 +1,11 @@
+[package]
+name = "special-functions"
+version = "0.1.0"
+edition = "2021"
+authors = ["xiangong tang <tangxiangong@gmail.com>"]
+
+[lib]
+name = "special_functions"
+crate-type = ["rlib", "cdylib"]
+
+[dependencies]
