@@ -13,6 +13,13 @@ pub(crate) fn approx_eq(a: f64, b: f64) -> bool {
 ///
 /// - `x`:  自变量的值
 /// - `arr`:  多项式的系数数组, 按次数降序
+/// 
+/// # Example 
+/// 
+/// ```
+/// use special_functions::utils::eval_poly;
+/// eval_poly(0.5, &[16., 0., 20., 0., 5., 0.]) // 6th first-kind Chebyshev polynomial
+/// ```
 pub fn eval_poly(x: f64, arr: &[f64]) -> f64 {
     arr.iter().fold(0.0, |acc, &a| acc * x + a)
 }
