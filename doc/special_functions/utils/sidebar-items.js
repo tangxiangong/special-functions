@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["approx_eq","eval_poly","float_eq"]};
